@@ -623,7 +623,7 @@ input:focus {
 
   font-size:1.3rem;
 
-}
+} 
 
 
 
@@ -742,6 +742,15 @@ input:focus {
 
   padding:20px;
 
+}
+
+.aircraft-detail-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
 }
 
 
