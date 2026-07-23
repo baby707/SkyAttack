@@ -7,12 +7,10 @@
 
     <meta
       name="description"
-      content="SkyAttack private pilot knowledge quiz."
+      content="SkyAttack aviation quiz for student pilots."
     />
 
-    <title>SkyAttack | Pilot Quiz</title>
-
-    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+    <title>SkyAttack | Aviation Quiz</title>
 
     <link rel="stylesheet" href="../style.css" />
   </head>
@@ -22,34 +20,34 @@
       <div class="container nav-container">
         <a href="../index.html" class="logo"> SkyAttack </a>
 
-        <nav class="nav" aria-label="Main navigation">
+        <nav class="nav">
           <ul class="nav-list">
             <li>
-              <a href="../index.html"> Home </a>
+              <a href="../index.html">Home</a>
             </li>
 
             <li>
-              <a href="aircraft.html"> Aircraft </a>
+              <a href="aircraft.html">Aircraft</a>
             </li>
 
             <li>
-              <a href="flashcards.html"> Flashcards </a>
+              <a href="flashcards.html">Flashcards</a>
             </li>
 
             <li>
-              <a href="quiz.html"> Quiz </a>
+              <a href="quiz.html">Quiz</a>
             </li>
 
             <li>
-              <a href="vspeeds.html"> V-Speeds </a>
+              <a href="vspeeds.html">V-Speeds</a>
             </li>
 
             <li>
-              <a href="weightbalance.html"> Weight & Balance </a>
+              <a href="weightbalance.html">Weight & Balance</a>
             </li>
 
             <li>
-              <a href="flightplanner.html"> Flight Planner </a>
+              <a href="flightplanner.html">Flight Planner</a>
             </li>
           </ul>
         </nav>
@@ -67,34 +65,20 @@
     <main>
       <section class="quiz-section">
         <div class="container">
-          <h1>Private Pilot Quiz</h1>
+          <h1>Aviation Quiz</h1>
 
-          <p>Test your aviation knowledge and improve your pilot skills.</p>
+          <p>Test your private pilot knowledge.</p>
 
-          <!-- QUIZ DIFFICULTY -->
+          <div class="quiz-card">
+            <h2 id="quiz-question">Loading question...</h2>
 
-          <div class="quiz-controls">
-            <label for="difficulty"> Choose Difficulty </label>
+            <div id="quiz-options" class="quiz-options"></div>
 
-            <select id="difficulty" aria-label="Choose quiz difficulty">
-              <option value="student">Student Pilot</option>
+            <p id="quiz-result"></p>
 
-              <option value="private">Private Pilot</option>
+            <button id="quiz-next" class="btn">Next Question</button>
 
-              <option value="instrument">Instrument Pilot</option>
-            </select>
-          </div>
-
-          <div class="quiz-card" id="quiz-card">
-            <h2 id="quiz-question">Question goes here</h2>
-
-            <div class="quiz-options" id="quiz-options"></div>
-
-            <p id="quiz-feedback"></p>
-
-            <button class="btn" id="next-question">Next Question</button>
-
-            <h3 id="quiz-score">Score: 0</h3>
+            <p id="quiz-score">Score: 0</p>
           </div>
         </div>
       </section>
@@ -102,7 +86,9 @@
 
     <footer class="footer">
       <div class="container">
-        <p>© 2026 SkyAttack. All rights reserved.</p>
+        <h3>SkyAttack</h3>
+
+        <p>Building confident pilots through knowledge.</p>
       </div>
     </footer>
 
