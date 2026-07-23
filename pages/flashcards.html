@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="SkyAttack private pilot flashcards to practice aviation knowledge."
+    />
+
+    <title>SkyAttack | Flashcards</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> SkyAttack </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="aircraft.html"> Aircraft </a>
+            </li>
+
+            <li>
+              <a href="flashcards.html"> Flashcards </a>
+            </li>
+
+            <li>
+              <a href="quiz.html"> Quiz </a>
+            </li>
+
+            <li>
+              <a href="vspeeds.html"> V-Speeds </a>
+            </li>
+
+            <li>
+              <a href="weightbalance.html"> Weight & Balance </a>
+            </li>
+
+            <li>
+              <a href="flightplanner.html"> Flight Planner </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="lesson">
+        <div class="container flashcard-container">
+          <h1>Private Pilot Flashcards</h1>
+
+          <p>
+            Practice aviation knowledge by category and track your learning
+            progress.
+          </p>
+
+          <label for="category"> Choose Category </label>
+
+          <select id="category" aria-label="Choose flashcard category">
+            <option value="all">All Topics</option>
+
+            <option value="aerodynamics">Aerodynamics</option>
+
+            <option value="weather">Weather</option>
+
+            <option value="airspace">Airspace</option>
+
+            <option value="regulations">Regulations</option>
+          </select>
+
+          <div class="flashcard" id="flashcard" aria-live="polite">
+            <h2 id="question">Loading question...</h2>
+
+            <p id="answer">Answer</p>
+          </div>
+
+          <div class="flashcard-buttons">
+            <button class="btn" id="show-answer">Show Answer</button>
+
+            <button class="btn-dark" id="correct">I Know This</button>
+
+            <button class="btn-dark" id="wrong">Study Again</button>
+
+            <button class="btn-dark" id="next-card">Next Card</button>
+          </div>
+
+          <p class="card-progress" id="card-progress">Card 1 of 1</p>
+
+          <p class="score" id="score">Score: 0</p>
+
+          <button class="btn-dark" id="reset-score">Reset Score</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 SkyAttack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

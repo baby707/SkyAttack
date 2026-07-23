@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="SkyAttack aircraft V-speed reference for student pilots."
+    />
+
+    <title>SkyAttack | V-Speed Reference</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> SkyAttack </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="aircraft.html"> Aircraft </a>
+            </li>
+
+            <li>
+              <a href="flashcards.html"> Flashcards </a>
+            </li>
+
+            <li>
+              <a href="quiz.html"> Quiz </a>
+            </li>
+
+            <li>
+              <a href="vspeeds.html"> V-Speeds </a>
+            </li>
+
+            <li>
+              <a href="weightbalance.html"> Weight & Balance </a>
+            </li>
+
+            <li>
+              <a href="flightplanner.html"> Flight Planner </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="lesson">
+        <div class="container">
+          <h1>Aircraft V-Speed Reference</h1>
+
+          <p>Select an aircraft to view important operating speeds.</p>
+
+          <div class="vspeed-selector">
+            <label for="vspeed-aircraft"> Choose Aircraft </label>
+
+            <select id="vspeed-aircraft">
+              <option value="cessna172">Cessna 172</option>
+
+              <option value="piperpa28">Piper PA-28</option>
+
+              <option value="diamondda40">Diamond DA40</option>
+            </select>
+          </div>
+
+          <div class="vspeed-grid">
+            <article class="vspeed-card">
+              <h2>Vx</h2>
+
+              <h3>Best Angle of Climb</h3>
+
+              <p id="vx">62 KIAS</p>
+            </article>
+
+            <article class="vspeed-card">
+              <h2>Vy</h2>
+
+              <h3>Best Rate of Climb</h3>
+
+              <p id="vy">74 KIAS</p>
+            </article>
+
+            <article class="vspeed-card">
+              <h2>Va</h2>
+
+              <h3>Maneuvering Speed</h3>
+
+              <p id="va">105 KIAS</p>
+            </article>
+
+            <article class="vspeed-card">
+              <h2>Vne</h2>
+
+              <h3>Never Exceed Speed</h3>
+
+              <p id="vne">163 KIAS</p>
+            </article>
+
+            <article class="vspeed-card">
+              <h2>Best Glide</h2>
+
+              <h3>Maximum Distance Without Power</h3>
+
+              <p id="glide">68 KIAS</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 SkyAttack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

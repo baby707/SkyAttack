@@ -1,0 +1,1495 @@
+/* ==============================
+   SKYATTACK GLOBAL STYLES
+============================== */
+
+
+* {
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+}
+
+
+
+html {
+
+  scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+  font-family:Arial, sans-serif;
+
+  line-height:1.6;
+
+  color:#0B1D33;
+
+  background:#f5f9fc;
+
+}
+
+
+
+a {
+
+  color:inherit;
+
+  text-decoration:none;
+
+}
+
+
+
+button,
+input,
+select {
+
+  font-family:inherit;
+
+}
+
+
+
+a:focus,
+button:focus,
+select:focus,
+input:focus {
+
+  outline:3px solid #FFC107;
+
+  outline-offset:4px;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   CONTAINER
+============================== */
+
+
+.container {
+
+  max-width:1200px;
+
+  margin:0 auto;
+
+  padding:0 24px;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   HEADER / NAVIGATION
+============================== */
+
+
+.header {
+
+  background:#0B1D33;
+
+  padding:30px 0;
+
+  position:relative;
+
+}
+
+
+
+
+
+.nav-container {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+}
+
+
+
+
+
+.logo {
+
+  color:white;
+
+  font-size:30px;
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+.nav-list {
+
+  display:flex;
+
+  gap:30px;
+
+  list-style:none;
+
+}
+
+
+
+
+
+.nav-list a {
+
+  color:white;
+
+  font-weight:bold;
+
+  transition:.3s;
+
+}
+
+
+
+
+
+.nav-list a:hover {
+
+  color:#FFC107;
+
+}
+
+
+
+
+
+.menu-button {
+
+  display:none;
+
+  background:none;
+
+  border:none;
+
+  color:white;
+
+  font-size:30px;
+
+  cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+
+.hero {
+
+  min-height:85vh;
+
+
+  background:
+
+  linear-gradient(
+  rgba(11,29,51,.75),
+  rgba(11,29,51,.75)
+  ),
+
+  url("images/heroo.jpg");
+
+
+  background-size:cover;
+
+  background-position:center;
+
+
+  display:flex;
+
+  align-items:center;
+
+
+  color:white;
+
+}
+
+
+
+
+
+.hero-content {
+
+  max-width:700px;
+
+}
+
+
+
+
+
+.hero h1 {
+
+  font-size:clamp(2.5rem,5vw,4.5rem);
+
+  line-height:1.1;
+
+  margin-bottom:25px;
+
+}
+
+
+
+
+
+.hero p {
+
+  font-size:1.25rem;
+
+  margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   BUTTONS
+============================== */
+
+
+.btn,
+.btn-dark {
+
+
+  display:inline-block;
+
+  padding:15px 35px;
+
+  border-radius:8px;
+
+  border:none;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+
+}
+
+
+
+
+
+.btn {
+
+
+  background:#1E88E5;
+
+  color:white;
+
+
+}
+
+
+
+
+
+.btn:hover {
+
+
+  background:#1565C0;
+
+  transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+.btn-dark {
+
+
+  background:#0B1D33;
+
+  color:white;
+
+
+}
+
+
+
+
+
+.btn-dark:hover {
+
+
+  background:#1E88E5;
+
+  transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   GENERAL SECTIONS
+============================== */
+
+
+.study,
+.aircraft,
+.flashcards,
+.resources,
+.lesson {
+
+
+  padding:120px 0;
+
+
+}
+
+
+
+
+
+.section-header {
+
+  text-align:center;
+
+  margin-bottom:60px;
+
+}
+
+
+
+
+
+.section-header h1 {
+
+  font-size:3rem;
+
+  margin-bottom:20px;
+
+}
+
+
+
+
+
+.section-header p {
+
+  font-size:1.2rem;
+
+  max-width:700px;
+
+  margin:auto;
+
+}
+
+
+/* ==============================
+   STUDY CARDS
+============================== */
+
+
+.card-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:35px;
+
+}
+
+
+
+
+
+.study-card {
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:15px;
+
+  border-left:5px solid #1E88E5;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+
+  transition:.3s;
+
+}
+
+
+
+
+
+.study-card:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+
+
+.study-card h3 {
+
+  color:#1E88E5;
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   LESSON PAGES
+============================== */
+
+
+.lesson h1 {
+
+  text-align:center;
+
+  font-size:3.2rem;
+
+  margin-bottom:25px;
+
+}
+
+
+
+
+
+.lesson > .container > p {
+
+  max-width:750px;
+
+  margin:0 auto 50px;
+
+  text-align:center;
+
+  font-size:1.15rem;
+
+}
+
+
+
+
+
+.lesson h2 {
+
+  margin-top:60px;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   FLASHCARD APP
+============================== */
+
+
+.flashcard-container {
+
+  text-align:center;
+
+}
+
+
+
+
+
+#category {
+
+  padding:12px 20px;
+
+  margin:20px 0 40px;
+
+  border-radius:8px;
+
+  border:2px solid #1E88E5;
+
+  background:white;
+
+  font-size:1rem;
+
+}
+
+
+
+
+
+.flashcard {
+
+  max-width:700px;
+
+  min-height:320px;
+
+  margin:40px auto;
+
+  padding:50px;
+
+  background:white;
+
+  border-radius:20px;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.12);
+
+  border-top:6px solid #1E88E5;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+}
+
+
+
+
+
+.flashcard h2 {
+
+  font-size:2rem;
+
+  margin-bottom:35px;
+
+}
+
+
+
+
+
+.flashcard p {
+
+  color:#1E88E5;
+
+  font-weight:bold;
+
+  font-size:1.3rem;
+
+}
+
+
+
+
+
+.flashcard-buttons {
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+
+
+.card-progress,
+.score {
+
+  margin-top:30px;
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+.score {
+
+  color:#1E88E5;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   AIRCRAFT LIBRARY
+============================== */
+
+
+.aircraft-library {
+
+  padding:120px 0;
+
+}
+
+
+
+
+
+.aircraft-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:35px;
+
+}
+
+
+
+
+
+.aircraft-card {
+
+  background:white;
+
+  border-radius:18px;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,.12);
+
+  transition:.3s;
+
+}
+
+
+
+
+
+.aircraft-card:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+
+
+.aircraft-card img {
+
+  width:100%;
+
+  height:260px;
+
+  object-fit:contain;
+
+  background:#e3f2fd;
+
+  padding:20px;
+
+}
+
+
+
+
+
+.aircraft-content {
+
+  padding:30px;
+
+}
+
+
+
+
+
+.aircraft-content h2 {
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+.aircraft-content p {
+
+  color:#455A64;
+
+  margin-bottom:25px;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   AIRCRAFT SEARCH CONTROLS
+============================== */
+
+
+.aircraft-controls {
+
+  max-width:700px;
+
+  margin:0 auto 60px;
+
+  padding:35px;
+
+  background:white;
+
+  border-radius:15px;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+
+  display:grid;
+
+  gap:15px;
+
+}
+
+
+
+
+
+.aircraft-controls label {
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+.aircraft-controls input,
+.aircraft-controls select {
+
+  width:100%;
+
+  padding:15px;
+
+  border-radius:8px;
+
+  border:2px solid #d9e5f0;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   AIRCRAFT COMPARISON TABLE
+============================== */
+
+
+.comparison-section {
+
+  padding:60px 0;
+
+}
+
+
+
+
+
+.comparison-table-container {
+
+  overflow-x:auto;
+
+}
+
+
+
+
+
+.comparison-table {
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  background:white;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+.comparison-table th {
+
+  background:#0B1D33;
+
+  color:white;
+
+  padding:20px;
+
+  text-align:left;
+
+}
+
+
+
+
+
+.comparison-table td {
+
+  padding:18px;
+
+  border-bottom:1px solid #ddd;
+
+}
+
+
+
+
+
+.comparison-table tr:hover {
+
+  background:#E3F2FD;
+
+}
+
+
+
+
+
+
+
+/* ==============================
+   QUIZ PAGE
+============================== */
+
+
+.quiz-section {
+
+  padding:120px 0;
+
+}
+
+
+
+
+
+.quiz-card {
+
+  max-width:750px;
+
+  margin:auto;
+
+  background:white;
+
+  padding:50px;
+
+  border-radius:20px;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+.quiz-card h2 {
+
+  text-align:center;
+
+  margin-bottom:35px;
+
+}
+
+
+
+
+
+.quiz-options {
+
+  display:grid;
+
+  gap:20px;
+
+}
+
+
+
+
+
+.quiz-option {
+
+  padding:18px;
+
+  border-radius:10px;
+
+  border:2px solid #d9e5f0;
+
+  background:white;
+
+  cursor:pointer;
+
+  text-align:left;
+
+}
+
+
+
+
+
+.quiz-option:hover {
+
+  background:#E3F2FD;
+
+  border-color:#1E88E5;
+
+}
+
+
+
+
+
+#quiz-result {
+
+  text-align:center;
+
+  font-weight:bold;
+
+  margin:25px 0;
+
+}
+
+
+
+
+
+#quiz-score {
+
+  text-align:center;
+
+  color:#1E88E5;
+
+}
+
+/* ==============================
+   V-SPEED PAGE
+============================== */
+
+
+.vspeed-grid {
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:30px;
+
+}
+
+
+
+
+
+.vspeed-card {
+
+  background:white;
+
+  padding:35px;
+
+  border-radius:18px;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,.1);
+
+  transition:.3s;
+
+}
+
+
+
+
+
+.vspeed-card:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+
+
+.vspeed-card h2 {
+
+  font-size:2.5rem;
+
+  color:#1E88E5;
+
+  margin-bottom:10px;
+
+}
+
+
+
+
+
+.vspeed-card h3 {
+
+  color:#0B1D33;
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+.vspeed-card p {
+
+  color:#555;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   WEIGHT & BALANCE
+============================== */
+
+
+.weight-card {
+
+  max-width:700px;
+
+  margin:40px auto;
+
+  background:white;
+
+  padding:45px;
+
+  border-radius:20px;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+.weight-card h2 {
+
+  margin-top:35px;
+
+  margin-bottom:20px;
+
+}
+
+
+
+
+
+.weight-card label {
+
+  display:block;
+
+  margin-top:18px;
+
+  margin-bottom:8px;
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+.weight-card input,
+.weight-card select {
+
+
+  width:100%;
+
+  padding:14px;
+
+  border-radius:8px;
+
+  border:2px solid #d9e5f0;
+
+  font-size:1rem;
+
+}
+
+
+
+
+
+.weight-card input:focus,
+.weight-card select:focus {
+
+
+  border-color:#1E88E5;
+
+  outline:none;
+
+
+}
+
+
+
+
+
+.weight-card .btn {
+
+  margin-top:35px;
+
+  width:100%;
+
+}
+
+
+
+
+
+#weight-result,
+#cg-result,
+#limit-result {
+
+
+  margin-top:25px;
+
+  padding:20px;
+
+  border-radius:10px;
+
+  background:#f5f9fc;
+
+  text-align:center;
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+
+.footer {
+
+  background:#06111F;
+
+  color:white;
+
+  padding:50px 0;
+
+  text-align:center;
+
+}
+
+
+
+
+
+.footer h3 {
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+
+@media(max-width:768px){
+
+
+
+.container {
+
+  padding:0 18px;
+
+}
+
+
+
+
+
+
+/* NAVIGATION */
+
+
+.nav {
+
+  display:none;
+
+}
+
+
+
+
+
+.menu-button {
+
+  display:block;
+
+}
+
+
+
+
+
+.nav.active {
+
+  display:block;
+
+  position:absolute;
+
+  top:90px;
+
+  left:0;
+
+  width:100%;
+
+  background:#0B1D33;
+
+  padding:25px;
+
+}
+
+
+
+
+
+.nav.active .nav-list {
+
+  flex-direction:column;
+
+  text-align:center;
+
+}
+
+
+
+
+
+
+
+/* GRIDS */
+
+
+.card-grid {
+
+  grid-template-columns:1fr;
+
+}
+
+
+
+
+
+.aircraft-grid {
+
+  grid-template-columns:1fr;
+
+}
+
+
+
+
+
+
+
+/* TEXT */
+
+
+.hero h1 {
+
+  font-size:2.5rem;
+
+}
+
+
+
+
+
+.lesson h1,
+.quiz-section h1 {
+
+  font-size:2.3rem;
+
+}
+
+
+
+
+
+
+
+/* FLASHCARDS */
+
+
+.flashcard {
+
+  padding:30px;
+
+}
+
+
+
+
+
+.flashcard h2 {
+
+  font-size:1.5rem;
+
+}
+
+
+
+
+
+.flashcard-buttons {
+
+  flex-direction:column;
+
+}
+
+
+
+
+
+.flashcard-buttons button {
+
+  width:100%;
+
+}
+
+
+
+
+
+
+
+/* QUIZ */
+
+
+.quiz-card {
+
+  padding:25px;
+
+}
+
+
+
+
+
+
+
+/* WEIGHT */
+
+
+.weight-card {
+
+  padding:25px;
+
+}
+
+
+
+}

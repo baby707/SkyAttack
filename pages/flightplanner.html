@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="SkyAttack flight planner for student pilots. Calculate flight time and fuel requirements."
+    />
+
+    <title>SkyAttack | Flight Planner</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> SkyAttack </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="aircraft.html"> Aircraft </a>
+            </li>
+
+            <li>
+              <a href="flashcards.html"> Flashcards </a>
+            </li>
+
+            <li>
+              <a href="quiz.html"> Quiz </a>
+            </li>
+
+            <li>
+              <a href="vspeeds.html"> V-Speeds </a>
+            </li>
+
+            <li>
+              <a href="weightbalance.html"> Weight & Balance </a>
+            </li>
+
+            <li>
+              <a href="flightplanner.html"> Flight Planner </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="lesson">
+        <div class="container">
+          <div class="section-header">
+            <h1>Flight Planner</h1>
+
+            <p>
+              Estimate flight time and fuel requirements before your flight.
+            </p>
+          </div>
+
+          <div class="weight-card">
+            <h2>Flight Information</h2>
+
+            <label for="flight-distance"> Distance (nautical miles) </label>
+
+            <input
+              type="number"
+              id="flight-distance"
+              placeholder="Example: 120"
+            />
+
+            <label for="cruise-speed"> Cruise Speed (knots) </label>
+
+            <input type="number" id="cruise-speed" placeholder="Example: 110" />
+
+            <label for="fuel-burn"> Fuel Burn (gallons per hour) </label>
+
+            <input type="number" id="fuel-burn" placeholder="Example: 8" />
+
+            <button class="btn" id="calculate-flight">Calculate Flight</button>
+
+            <div id="flight-results">
+              <h2 id="flight-time">Time Enroute: --</h2>
+
+              <h2 id="fuel-required">Fuel Required: --</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h3>SkyAttack</h3>
+
+        <p>Building confident pilots through knowledge.</p>
+
+        <p>© 2026 SkyAttack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

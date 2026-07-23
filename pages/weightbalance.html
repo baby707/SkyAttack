@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="SkyAttack aircraft weight and balance calculator."
+    />
+
+    <title>SkyAttack | Weight & Balance</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> SkyAttack </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="aircraft.html"> Aircraft </a>
+            </li>
+
+            <li>
+              <a href="flashcards.html"> Flashcards </a>
+            </li>
+
+            <li>
+              <a href="quiz.html"> Quiz </a>
+            </li>
+
+            <li>
+              <a href="vspeeds.html"> V-Speeds </a>
+            </li>
+
+            <li>
+              <a href="weightbalance.html"> Weight & Balance </a>
+            </li>
+
+            <li>
+              <a href="flightplanner.html"> Flight Planner </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="lesson">
+        <div class="container">
+          <h1>Weight & Balance Calculator</h1>
+
+          <p>Calculate aircraft loading and center of gravity before flight.</p>
+
+          <div class="weight-card">
+            <label for="wb-aircraft"> Select Aircraft </label>
+
+            <select id="wb-aircraft">
+              <option value="cessna172">Cessna 172</option>
+
+              <option value="piperpa28">Piper PA-28</option>
+
+              <option value="diamondda40">Diamond DA40</option>
+            </select>
+
+            <h2>Aircraft Weights</h2>
+
+            <label> Empty Weight (lbs) </label>
+
+            <input
+              type="number"
+              id="empty-weight"
+              placeholder="Example: 1650"
+            />
+
+            <label> Pilot Weight (lbs) </label>
+
+            <input type="number" id="pilot-weight" placeholder="Example: 170" />
+
+            <label> Passenger Weight (lbs) </label>
+
+            <input
+              type="number"
+              id="passenger-weight"
+              placeholder="Example: 150"
+            />
+
+            <label> Fuel Weight (lbs) </label>
+
+            <input type="number" id="fuel-weight" placeholder="Example: 240" />
+
+            <label> Baggage Weight (lbs) </label>
+
+            <input
+              type="number"
+              id="baggage-weight"
+              placeholder="Example: 30"
+            />
+
+            <h2>Arm Locations (inches)</h2>
+
+            <label> Empty Weight Arm </label>
+
+            <input type="number" id="empty-arm" placeholder="Example: 39" />
+
+            <label> Pilot Arm </label>
+
+            <input type="number" id="pilot-arm" placeholder="Example: 37" />
+
+            <label> Passenger Arm </label>
+
+            <input type="number" id="passenger-arm" placeholder="Example: 37" />
+
+            <label> Fuel Arm </label>
+
+            <input type="number" id="fuel-arm" placeholder="Example: 48" />
+
+            <label> Baggage Arm </label>
+
+            <input type="number" id="baggage-arm" placeholder="Example: 95" />
+
+            <button class="btn" id="calculate-weight">
+              Calculate Weight & CG
+            </button>
+
+            <h2 id="weight-result">Total Weight: --</h2>
+
+            <h2 id="cg-result">Center of Gravity: --</h2>
+
+            <h2 id="limit-result">Aircraft Status: --</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 SkyAttack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
